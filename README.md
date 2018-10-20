@@ -20,12 +20,25 @@
 
 暂不支持图片验证码识别
 
+## Installation
+
+运行以下 [npm](https://www.npmjs.com/get-npm) 命令安装。
+
+```bash
+npm install smsboomer -g
+```
+
+墙内用户可以通过环境变量指定 Puppeteer 的安装镜像，避免卡死在 Chromium 下载。
+
+```bash
+PUPPETEER_DOWNLOAD_HOST=https://storage.googleapis.com.cnpmjs.org npm install smsboomer -g
+```
+
 ## Usage
 
 ###  以CLI命令运行
 
 ```bash
-PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 npm install smsboomer -g
 smsboomer 138xxxxxxxx
 
 # 查看命令
